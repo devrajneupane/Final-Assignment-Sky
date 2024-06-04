@@ -1,0 +1,183 @@
+@media (min-width: 768px) {
+  .hero {
+    padding-bottom: 158px;
+  }
+
+  /* Header  */
+  .header__container {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+
+  .header__brand label {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .header__container-nav--hide {
+    display: block;
+  }
+
+  .dark-theme,
+  .light-theme {
+    /* width: 37px; */
+    width: 40px;
+  }
+
+  .header__container--nav {
+    margin-right: -55px;
+    gap: 56px;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  /* profile section  */
+
+  .hero__section-img {
+    width: 64px;
+  }
+
+  .hero__section span {
+    font-size: 24px;
+  }
+
+  .hero__section h1 {
+    font-size: 60px;
+    width: 867px;
+  }
+
+  .hero__section-desc {
+    width: 715px;
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+
+  .hero__section-button {
+    display: flex;
+    align-items: center;
+    gap: 29px;
+    padding-bottom: 40px;
+  }
+
+  .primary-button,
+  .primary-button--mobile {
+    padding: 10px 40px;
+  }
+
+  .button-desktop {
+    display: block;
+  }
+
+  .primary-button--mobile {
+    display: none;
+  }
+
+  .download-btn {
+    gap: 4px;
+  }
+
+  /* second page  */
+  .section-page {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 72px;
+    margin-top: 81px;
+    margin-bottom: 81px;
+  }
+
+  .section-page__content-title img {
+    width: 48px;
+  }
+
+  /* .title-img2 img { */
+  /*   width: 25px; */
+  /* } */
+
+  .section-page__content {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 80px;
+    gap: 20px;
+  }
+
+  .primary-buttons {
+    text-align: start;
+  }
+
+  .section-page__content-pill {
+    position: static;
+  }
+
+  .section-page__tools-img {
+    text-align: start;
+  }
+
+  .section-page__content-desc {
+    font-size: 18px;
+    width: 446px;
+  }
+
+  .title-img--style {
+    padding: 3px 11px;
+  }
+
+  /* Section 5  */
+  .fifth-section {
+    width: 100%;
+  }
+
+  .fifth-section__container {
+    width: 80%;
+    margin: auto;
+  }
+
+  .fifth-section__tools {
+    display: flex;
+  }
+
+  .fifth-section--title {
+    font-size: 36px;
+  }
+
+  .fifth-section__hr--mobile {
+    display: none;
+  }
+
+  .fifth-section__hr--desktop {
+    display: block;
+  }
+
+  .button-app-tool {
+    background: var(--pill-background);
+    color: black;
+  }
+
+  /* Footer  */
+  .footer {
+    padding: 39px 151px;
+  }
+
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer__container--left h3 {
+    font-size: 40px;
+  }
+
+  .footer__container--left p {
+    font-size: 18px;
+    padding-bottom: 0px;
+  }
+}
