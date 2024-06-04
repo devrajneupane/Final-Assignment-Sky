@@ -1,4 +1,5 @@
 @media (min-width: 768px) {
+  /* Section 1 */
   .hero {
     padding-bottom: 158px;
   }
@@ -21,9 +22,9 @@
     display: block;
   }
 
+  /* Theme image */
   .dark-theme,
   .light-theme {
-    /* width: 37px; */
     width: 40px;
   }
 
@@ -31,12 +32,6 @@
     margin-right: -55px;
     gap: 56px;
   }
-
-  .hide {
-    display: none;
-  }
-
-  /* profile section  */
 
   .hero__section-img {
     width: 64px;
@@ -57,10 +52,8 @@
     font-size: 18px;
   }
 
-  .hero__section-button {
-    display: flex;
-    align-items: center;
-    gap: 29px;
+  .hero__section-buttons {
+    flex-direction: row;
     padding-bottom: 40px;
   }
 
@@ -77,11 +70,12 @@
     display: none;
   }
 
-  .download-btn {
-    gap: 4px;
+  .download-button {
+    /* gap: 4px; */
+    align-items: baseline;
   }
 
-  /* second page  */
+  /* Section 2 */
   .section-page {
     width: 80%;
     margin: auto;
@@ -93,24 +87,17 @@
   }
 
   .section-page__content-title img {
-    width: 48px;
+    width: 25px;
   }
-
-  /* .title-img2 img { */
-  /*   width: 25px; */
-  /* } */
 
   .section-page__content {
     display: flex;
     align-items: start;
     justify-content: center;
     flex-direction: column;
+    flex-basis: 50%;
     padding-left: 80px;
     gap: 20px;
-  }
-
-  .primary-buttons {
-    text-align: start;
   }
 
   .section-page__content-pill {
@@ -123,11 +110,21 @@
 
   .section-page__content-desc {
     font-size: 18px;
-    width: 446px;
+    width: 100%;
+    max-width: 446px;
   }
 
   .title-img--style {
     padding: 3px 11px;
+  }
+
+  .section-page__banner {
+    width: 100%;
+    flex-basis: 50%;
+  }
+
+  .section-page__banner img {
+    height: 740px;
   }
 
   /* Section 5  */
@@ -142,9 +139,10 @@
 
   .fifth-section__tools {
     display: flex;
+    justify-content: space-between;
   }
 
-  .fifth-section--title {
+  .fifth-section--title h1{
     font-size: 36px;
   }
 
@@ -163,7 +161,7 @@
 
   /* Footer  */
   .footer {
-    padding: 39px 151px;
+    padding: 39px 170px;
   }
 
   .footer__container {

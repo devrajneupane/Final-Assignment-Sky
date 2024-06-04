@@ -16,13 +16,13 @@
 body {
   overflow-x: hidden;
   background-color: var(--section-background);
-  color: black;
+  color: #000;
   transition: all 0.5s linear;
 }
 
 body.dark {
   background-color: var(--section-background-dark);
-  color: white;
+  color: #fff;
 }
 
 a {
@@ -31,14 +31,14 @@ a {
 
 button {
   border: none;
-  background: white;
+  background: #fff;
 }
 
 ul li {
   list-style: none;
 }
 
-/* first page  */
+/* Section 1 */
 
 .hero {
   position: relative;
@@ -69,11 +69,6 @@ ul li {
   display: none;
 }
 
-.dark-theme,
-.light-theme {
-  width: 24px;
-}
-
 .header__brand-logo {
   /* width: 37px; */
   width: 40px;
@@ -92,8 +87,8 @@ ul li {
   cursor: pointer;
 }
 
-.theme-btn {
-  background: white;
+.theme-button {
+  background: #fff;
   border: none;
 }
 
@@ -108,30 +103,6 @@ ul li {
 
 .header__container-nav--hide {
   display: none;
-}
-
-.show-responsive {
-  display: none;
-  flex-direction: column;
-  gap: 10px;
-  position: absolute;
-  top: 70px;
-  right: 30px;
-}
-
-.hide {
-  display: flex;
-}
-
-.show-nav {
-  background: var(--pill-background);
-  padding: 8px;
-  border-radius: 10%;
-  cursor: pointer;
-}
-
-.show-nav:hover {
-  opacity: 0.8;
 }
 
 .hero__section {
@@ -178,8 +149,10 @@ ul li {
 }
 
 .hero__section-buttons {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  /* justify-content: center; */
   gap: 29px;
   padding-top: 32px;
   padding-bottom: 120px;
@@ -192,7 +165,7 @@ ul li {
 .primary-button,
 .primary-button--mobile {
   background: var(--button-background);
-  color: white;
+  color: #fff;
   /* width: 167px; */
   padding: 10px 40px;
   border-radius: 43px;
@@ -200,20 +173,17 @@ ul li {
   text-transform: uppercase;
 }
 
-.button-desktop {
-  display: none;
+.dark-theme,
+.light-theme {
+  width: 24px;
 }
 
-.primary-button--mobile {
-  display: inline;
-}
-
-.download-btn {
+.download-button {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   gap: 10px;
-  font-weight: 400;
+  /* font-weight: 400; */
   font-size: 16px;
 }
 
@@ -228,7 +198,15 @@ ul li {
   cursor: pointer;
 }
 
-/* second page  */
+.button-desktop {
+  display: none;
+}
+
+.primary-button--mobile {
+  display: inline;
+}
+
+/* Second 2  */
 .section-page {
   display: flex;
   flex-direction: column-reverse;
@@ -280,10 +258,6 @@ ul li {
   width: 68px;
 }
 
-.title-img img {
-  width: 35px;
-}
-
 .section-page__content-desc {
   width: 327px;
   font-size: 14px;
@@ -298,11 +272,9 @@ ul li {
   text-align: center;
 }
 
-/* right side  */
-
-.section-page__banner {
-  width: 100%;
-}
+/* .section-page__banner { */
+/*   width: 100%; */
+/* } */
 
 .section-page__banner img {
   width: 100%;
@@ -310,6 +282,10 @@ ul li {
   object-fit: cover;
 }
 
+/* Section 3 */
+.title-img img {
+  width: 35px;
+}
 
 .title-img--style {
   padding: 5px 7px;
@@ -323,10 +299,6 @@ ul li {
 
 .section-page__tools-img--short img {
   width: 145px;
-}
-
-.medica-img {
-  padding: 5px 7px;
 }
 
 /* Section 4 */
@@ -346,10 +318,11 @@ ul li {
 
 .fifth-section__tools {
   display: grid;
+  align-items: center;
+  justify-content: normal;
   column-gap: 62px;
   row-gap: 26px;
-  align-items: center;
-  justify-content: center;
+  margin-left: 1em;
 }
 
 .fifth-section--title {
@@ -406,7 +379,7 @@ ul li {
 
 .button-app-tool {
   background: var(--button-background);
-  color: white;
+  color: #fff;
   text-align: center;
   padding: 10px 0px;
   margin-top: 45px;
@@ -447,37 +420,32 @@ ul li {
 .hero,
 .section-page,
 .fifth-section {
-  background: white;
+  background: #fff;
+}
+
+body.dark .hero__section-company,
+body.dark .download-button,
+body.dark .menu {
+  color: #fff;
+}
+
+body.dark .title-img--style {
+  background: #fff;
 }
 
 /* Dark Theme  */
 body.dark .hero,
 body.dark .section-page,
 body.dark .fifth-section,
-body.dark .theme-btn,
-body.dark .download-btn {
+body.dark .theme-button,
+body.dark .download-button {
   background: #050519;
-}
-
-body.dark .hero__section-company,
-body.dark .download-btn,
-body.dark .menu {
-  color: white;
-}
-
-/* bg white  */
-body.dark .title-img--style {
-  background: white;
 }
 
 body.dark .section-page__content-pill,
 body.dark .second-gray-btn,
 body.dark .menu {
   background: var(--section-background-dark);
-}
-
-body.dark .show-responsive {
-  color: #000;
 }
 
 body.dark .header {
